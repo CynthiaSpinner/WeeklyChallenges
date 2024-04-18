@@ -119,7 +119,7 @@ namespace ChallengesWithTestsMark8
                 return false;
             }
 
-            return (numbers.Sum() % 2 != 0);
+            return numbers.Sum() % 2 != 0;
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
