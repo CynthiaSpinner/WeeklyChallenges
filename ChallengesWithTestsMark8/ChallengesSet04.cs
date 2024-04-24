@@ -45,7 +45,29 @@ namespace ChallengesWithTestsMark8
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {
-            throw new NotImplementedException();
+            if (sideLength1 <= 0 || sideLength2 <= 0 || sideLength3 <= 0)
+            {
+                return false;
+            }
+                        
+            if (sideLength1 + sideLength2 <= sideLength3)
+            {
+                return false;
+            }
+
+            else if(sideLength1 + sideLength3 <= sideLength2)
+            {
+                return false;
+            }
+
+            else if(sideLength2 + sideLength3 <= sideLength1)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public bool IsStringANumber(string input)
@@ -102,7 +124,20 @@ namespace ChallengesWithTestsMark8
 
         public int Factorial(int number)
         {
-            throw new NotImplementedException();
+            if (number < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            int fact = 1;
+
+            for (int i = 1; i <= number; i++) 
+            {
+                fact = fact * i;
+            }
+            return fact;
+
+           
         }
     }
 }
