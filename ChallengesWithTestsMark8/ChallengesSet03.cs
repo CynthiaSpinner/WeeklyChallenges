@@ -69,11 +69,11 @@ namespace ChallengesWithTestsMark8
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            if (dividend == null || divisor == null)
+            /*if (dividend == null || divisor == null)
             {
                 return 0;
-            }
-            if (dividend == 0 || divisor == 0)
+            }*/
+            if (/*dividend == 0 || */divisor == 0)
             {
                 return 0;
             }

@@ -84,12 +84,12 @@ namespace ChallengesWithTestsMark8
             {
                 return 0;
             }
-            if (numbers.Length == 0)
+            /*if (numbers.Length == 0)
             {
                 return 0;
 
-            }
-                return numbers.Sum();
+            }*/
+            return numbers.Sum();
             
         }
 
